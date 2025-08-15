@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ChangeEvent } from "react";
+import { useMemo, useState } from "react";
 import { Link, HashIcon } from "lucide-react";
 
 import Button from "@components/Button";
@@ -50,7 +50,7 @@ const initialLinks: Link[] = [
 ];
 
 function App() {
-  const [links, setLinks] = useState<Link[]>(initialLinks);
+  const [links] = useState<Link[]>(initialLinks);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedHashtags, setSelectedHashtags] = useState<string[]>([]);
 
