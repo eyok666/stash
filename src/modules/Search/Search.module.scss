@@ -1,0 +1,40 @@
+.search {
+  height: 48px;
+  border: 1px solid;
+  border-radius: 16px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 8px 32px #1f26875e;
+}
+
+.search__input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: inherit;
+  padding: 0 48px;
+  font-size: 14px;
+  outline: none;
+  text-overflow: ellipsis;
+
+  &::placeholder {
+    font-size: 15px;
+  }
+}
+
+.search__icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search__action {
+  left: 16px;
+}
+
+.search__clear {
+  right: 16px;
+}

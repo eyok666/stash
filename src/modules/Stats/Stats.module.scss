@@ -1,0 +1,27 @@
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.stats__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff3;
+  border-radius: 100px;
+  background-color: #ffffff1a;
+  height: 36px;
+  padding: 6px 14px;
+}
+
+.stats__item-icon {
+  height: 14px;
+  width: 14px;
+  margin-right: 6px;
+}
+
+.stats__item-label {
+  font-size: 14px;
+}

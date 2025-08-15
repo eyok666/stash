@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.header__title {
+  font-size: 2em;
+}
+
+.header__subtitle {
+  font-size: 1.1em;
+}
