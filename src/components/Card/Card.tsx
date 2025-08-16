@@ -26,7 +26,9 @@ export default function Card({ title, date, desc, content, tags }: CardProps) {
     <div className={s.card}>
       <div className={s.card__header}>
         <div className={s.card__info}>
-          <h3 className={s.card__title}>{title}</h3>
+          <h3 className={s.card__title} title={title}>
+            {title}
+          </h3>
 
           <div className={s.card__meta}>
             <div className={s["card__meta-item"]}>
@@ -41,11 +43,7 @@ export default function Card({ title, date, desc, content, tags }: CardProps) {
           </div>
         </div>
 
-        <div className={s.card__actions}>
-          <div>edit</div>
-          <div>link</div>
-          <div>delete</div>
-        </div>
+        <div className={s.card__actions}>. . .</div>
       </div>
 
       <div className={s.card__content}>{content}</div>

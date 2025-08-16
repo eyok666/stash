@@ -1,0 +1,14 @@
+.swipeable {
+  -webkit-overflow-scrolling: touch; // инерция на iOS
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none; // убираем скроллбар на webkit
+  }
+}
+
+.swipeableInner {
+  display: flex;
+  gap: 8px; // пример для горизонтальной карусели
+}

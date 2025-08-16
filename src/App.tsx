@@ -3,11 +3,11 @@ import { Link, HashIcon } from "lucide-react";
 
 import Button from "@components/Button";
 import Header from "@components/Header";
-import Filters from "@modules/Filters";
 import Search from "@modules/Search";
 import Stats from "@modules/Stats";
-import type { IStatItem } from "@modules/Stats/Stats";
 import Card from "@components/Card";
+import type { IStatItem } from "@modules/Stats/Stats";
+import Filters from "@components/Filters/Filters-new";
 
 export interface Link {
   id: string;
@@ -107,9 +107,13 @@ function App() {
   return (
     <div className="app">
       <Header />
+
       <Stats items={statsItems} />
 
-      <div style={{ textAlign: "center", marginTop: 36, marginBottom: 24 }}>
+      <div
+        className="add__link"
+        style={{ textAlign: "center", marginTop: 36, marginBottom: 24 }}
+      >
         <Button
           style={{
             height: 48,
@@ -128,7 +132,10 @@ function App() {
         <Search value={searchQuery} onChange={setSearchQuery} />
       </div>
 
-      <div style={{ justifySelf: "center", marginBottom: 24 }}>
+      <div
+        className="filters"
+        style={{ justifySelf: "center", marginBottom: 24 }}
+      >
         <Filters
           items={filtersItems}
           searchQuery={searchQuery}

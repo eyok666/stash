@@ -25,3 +25,9 @@
 .stats__item-label {
   font-size: 14px;
 }
+
+@media (max-width: 800px) {
+  .stats {
+    display: none;
+  }
+}

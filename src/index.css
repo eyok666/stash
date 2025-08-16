@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  box-shadow: none !important;
 }
 
 body {
@@ -42,10 +43,22 @@ body {
 
 @media (max-width: 800px) {
   .app {
-    margin: 0 16px;
+    margin: 16px;
   }
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .add__link {
+    display: none;
+  }
+
+  .filters {
+    position: sticky;
+    top: 0;
+    padding: 16px;
+    margin: 0 -16px;
+    background: rgb(36, 36, 36);
   }
 }
